@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block main %}
+    <section class="contact">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Address:</p>
+            <p>98 West 21th Street, New York, NY 10016</p>
+            <p>Phone Number:</p>
+            <p>+1 (123)-456-7890</p>
+            <p>Email:</p>
+            <p>info@domain.com</p>
+            <p>For any inquiries, questions, or assistance, please don't hesitate to reach out to us using the above contact details. Feel free to contact us at your convenience, and we'll be delighted to assist you further.</p>
+            <p>We value your interest and strive to maintain open communication with all our clients, partners, and inquiries. Your feedback is highly appreciated and crucial to our continuous improvement. Thank you for choosing us as your trusted contact, and we look forward to connecting with you soon.</p>
+
+
+        </div>
+
+        <div class="ask-tour-content">
+            <h2>Customer Information</h2>  
+            <p>Please provide your details for tour advise</p>
+            <form id="asktourForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Tour" required>
+                <input type="date" placeholder="Date of Departure" required>
+                <input type="submit" value="Send Now">
+            </form>
+        </div>
+    </section>
+{% endblock %}
+

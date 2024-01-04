@@ -1,0 +1,293 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+        <!--Container-->
+        <section>
+            <div class="container" id="properties">
+                <h2>Start Your Vacation <br> with Lots of Services</h2>
+            </div>
+            <div class="row-items">
+                <div class="container-box" id="shipCruisesBtn">
+                    <div class="container-img">
+                        <img src="static/img/type/trip1.png">
+                    </div>
+                    <a class="category-btn" data-category="shipCruises">Ship Cruises</a>
+                    <p>06 Properties</p>
+                </div>
+
+                <div class="container-box" id="foodTourBtn">
+                    <div class="container-img">
+                        <img src="static/img/type/trip2.png">
+                    </div>
+                    <a class="category-btn" data-category="foodTour">Food Tour</a>
+                    <p>03 Properties</p>
+                </div>
+
+                <div class="container-box" id="summerRestBtn">
+                    <div class="container-img">
+                        <img src="static/img/type/trip3.png">
+                    </div>
+                    <a class="category-btn" data-category="summerRest">Summer Rest</a>
+                    <p>20 Properties</p>
+                </div>
+
+                <div class="container-box" id="mountainTourBtn">
+                    <div class="container-img">
+                        <img src="static/img/type/trip4.png">
+                    </div>
+                    <a class="category-btn" data-category="mountainTour">Mountain Tour</a>
+                    <p>00 Properties</p>
+                </div>
+            </div>
+            <div class="category-content">
+                <div class="package-content-category">
+                    <div class="shipCruises">
+                        <div class="thum">
+                            <img src="static/img/img1.jpg" id="londonThumb" onclick="changeTourPreview('img/img1.jpg')">
+                            <h3>Hot</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>London</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="foodTour">
+                        <div class="thum">
+                            <img src="static/img/img2.jpg" id="newYorkThumb" onclick="changeTourPreview('img/img2.jpg')">
+                            <h3>Hot</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>New York</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="summerRest">
+                        <div class="thum">
+                            <img src="static/img/img3.jpg" id="dubaiThumb" onclick="changeTourPreview('img/img3.jpg')">
+                            <h3>Hot</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>Dubai</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div class="shipCruises">
+                        <div class="thum">
+                            <img src="static/img/img1.jpg" id="londonThumb" onclick="changeTourPreview('img/img1.jpg')">
+                            <h3>Hot</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>London</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="foodTour">
+                        <div class="thum">
+                            <img src="static/img/img2.jpg" id="newYorkThumb" onclick="changeTourPreview('img/img2.jpg')">
+                            <h3>Hot</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>New York</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="summerRest">
+                        <div class="thum">
+                            <img src="static/img/img3.jpg" id="dubaiThumb" onclick="changeTourPreview('img/img3.jpg')">
+                            <h3>Hot</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>Dubai</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipCruises">
+                        <div class="thum">
+                            <img src="static/img/img1.jpg" id="londonThumb" onclick="changeTourPreview('img/img1.jpg')">
+                            <h3>Upcoming</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>London</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="foodTour">
+                        <div class="thum">
+                            <img src="static/img/img2.jpg" id="newYorkThumb" onclick="changeTourPreview('img/img2.jpg')">
+                            <h3>                            <h3>Upcoming</h3>
+                        </h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>New York</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="summerRest">
+                        <div class="thum">
+                            <img src="static/img/img3.jpg" id="dubaiThumb" onclick="changeTourPreview('img/img3.jpg')">
+                            <h3>Upcoming</h3>
+                        </div>
+                        <div class="dest-content">
+                            <div class="location">
+                                <h4>Dubai</h4>
+                                <p>4h - 5h</p>
+                            </div>
+                            <div class="stars">
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                                <a href="#"><i class='bx bxs-star'></i></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="view-all text-center"> <!-- Added 'text-center' class to center the button -->
+                <a class="view-all-btn" id="viewAllButton">Reset the filter</a>
+            </div>
+            
+        </section>
+
+        
+
+        <!--Destination section-->
+        <section class="destination" id="destination">
+            <div class="title">
+                <h2>Our Most Popular <br> Destination!</h2>
+            </div>
+
+            <div class="destination-content">
+                <div class="col-content" onclick="openImageSliderPopup('Italy')">
+                    <img src="static/img/destination/img-1.jpg">
+                    <h5>ITALY</h5>
+                    <p>Rome</p>
+                </div>
+
+                <div class="col-content" onclick="openImageSliderPopup('Peru')">
+                    <img src="static/img/destination/img-2.jpg">
+                    <h5>PERU</h5>
+                    <p>Machu Picchu</p>
+                </div>
+
+                <div class="col-content" onclick="openImageSliderPopup('Japan')">
+                    <img src="static/img/destination/img-3.jpg">
+                    <h5>JAPAN</h5>
+                    <p>Kyoto</p>
+                </div>
+                <div class="col-content" onclick="openImageSliderPopup('Australia')">
+                    <img src="static/img/destination/img-4.jpg">
+                    <h5>AUSTRALIA</h5>
+                    <p>Great Barrier Reef</p>
+                </div>
+
+                <div class="col-content" onclick="openImageSliderPopup('South Africa')">
+                    <img src="static/img/destination/img-5.jpg">
+                    <h5>SOUTH AFRICA</h5>
+                    <p>Cape Town</p>
+                </div>
+
+                <div class="col-content" onclick="openImageSliderPopup('Iceland')">
+                    <img src="static/img/destination/img-6.jpg">
+                    <h5>ICELAND</h5>
+                    <p>The Blue Lagoon</p>
+                </div>
+                
+            </div>
+
+            <div class="view-all text-center"> <!-- Added 'text-center' class to center the button -->
+                <a id="view-all-destination" class="view-all-btn">View All Destination</a>
+            </div>
+
+        </section>
+
+{% endblock %}
+
