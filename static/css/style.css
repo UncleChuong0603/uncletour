@@ -608,6 +608,7 @@ header.sticky {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .ask-tour-content {
@@ -647,6 +648,26 @@ header.sticky {
     max-width: 100%;
     width: 450px;
     position: relative;
+}
+
+.ask-tour-content form select {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px 30px; /* Adjust padding as needed */
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    appearance: none; /* Remove default appearance */
+}
+
+/* Adjust hover and focus effects for select */
+.ask-tour-content form select:hover,
+.ask-tour-content form select:focus {
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
 }
 
 .ask-tour-content form input[type="text"],
@@ -1193,11 +1214,17 @@ display: inline-block;
     width: 100%;
     height: 100vh;
     background: var(--main-color);
+    margin-bottom: 100px; /* Adjust the margin as needed to create separation */
+
 }
 
 .table {
-    margin: 20px auto; /* Center the table section */
+    margin: auto; /* Center the table section */
     max-width: auto; /* Adjust the maximum width of the table */
+    overflow-y: auto;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
   }
   
   /* Style for the ask-tour-table */
@@ -1220,8 +1247,7 @@ display: inline-block;
     padding: 10px;
     text-align: left;
     border-bottom: 2px solid var(--text-color); /* Add a bottom border to header cells */
-    border-top: 2px solid var(--text-color); /* Add a bottom border to header cells */
-
+    border-top: 2px solid var(--text-color); /* Add a bottom border to header cells */  
   }
   
   /* Table body style */

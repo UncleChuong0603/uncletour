@@ -23,12 +23,18 @@
         <div class="ask-tour-content">
             <h2>Customer Information</h2>  
             <p>Please provide your details for tour advise</p>
-            <form id="asktourForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="Tour" required>
-                <input type="date" placeholder="Date of Departure" required>
+            <form id="asktourForm" method="post" action="/submit_ask_tour">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone_number" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <select name="tour" required>
+                    <option value="" disabled selected>Select Tour</option>
+                    <option value="London">London</option>
+                    <option value="New York">New York</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Not decided yet">Not decided yet</option>
+                </select>
+                <input type="date" name="date_of_departure" placeholder="Date of Departure" required>
                 <input type="submit" value="Send Now">
             </form>
         </div>
