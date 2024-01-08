@@ -51,20 +51,18 @@ def booking():
 def admin():
     user_id = session["user_id"]
     ask_tour_db = db.execute(
-        "SELECT name, phone_number, email, tour, date_of_departure FROM ask_tour_table WHERE id = ? GROUP BY name",
-        user_id,
+        "SELECT name, phone_number, email, tour, date_of_departure FROM ask_tour_table GROUP BY name"
     )
     booking_db = db.execute(
-        "SELECT guest_name, number_of_guest, tour_name, trip_length, date_of_departure, trip_code FROM booking_table WHERE id = ? GROUP BY guest_name",
-        user_id,
+        "SELECT guest_name, number_of_guest, tour_name, trip_length, date_of_departure, trip_code FROM booking_table GROUP BY guest_name"
     )
 
     user_db = db.execute(
-        "SELECT id, user_name, email FROM user_table WHERE id = ?", user_id
+        "SELECT id, user_name, email FROM user_table"
     )
 
     subscribe_db = db.execute(
-        "SELECT email, subscription_date FROM subscribe_email WHERE id = ?", user_id
+        "SELECT email, subscription_date FROM subscribe_email"
     )
     
     return render_template("admin.html", ask_tour_database=ask_tour_db, booking_database=booking_db, user_database=user_db, subscription_database=subscribe_db)
@@ -78,6 +76,8 @@ def login():
 
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
+
+
         # Ensure username was submitted
         if not request.form.get("username"):
             return apology("must provide username", 403)
@@ -138,7 +138,7 @@ def register():
                 "INSERT INTO user_table (user_name, hash, email) VALUES (?, ?, ?)", username, hash, email
             )
             # Redirect to the admin page after successful registration
-            return redirect("/admin")
+            return redirect("/login")
         except sqlite3.IntegrityError:
             return apology("Username or email already exists")
 
@@ -151,6 +151,8 @@ def logout():
 
     # Redirect user to login form
     return redirect("/login")
+
+
 
 @app.route("/submit_ask_tour", methods=["POST"])
 def submit_ask_tour():

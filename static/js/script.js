@@ -216,7 +216,9 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'http://127.0.0.1:5000/destination'; // Redirect to the desired URL
     });
     
-
+    // Get the table and footer elements
+    const table = document.querySelector('.user-table');
+    const footer = document.getElementById('contact');
 
 });
 
