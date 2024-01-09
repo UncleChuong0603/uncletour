@@ -51,10 +51,10 @@ def booking():
 def admin():
     user_id = session["user_id"]
     ask_tour_db = db.execute(
-        "SELECT name, phone_number, email, tour, date_of_departure FROM ask_tour_table GROUP BY name"
+        "SELECT name, phone_number, email, tour, date_of_departure FROM ask_tour_table ORDER BY name"
     )
     booking_db = db.execute(
-        "SELECT guest_name, number_of_guest, tour_name, trip_length, date_of_departure, trip_code FROM booking_table GROUP BY guest_name"
+        "SELECT guest_name, number_of_guest, tour_name, trip_length, date_of_departure, trip_code FROM booking_table ORDER BY guest_name"
     )
 
     user_db = db.execute(
